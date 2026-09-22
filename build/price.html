@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Прайс-лист — ЗооМир</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; color: #222; background: #f5f7f5; }
+
+.header {
+    background: #4a7c59; color: #fff; padding: 15px 30px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.logo h1 { font-size: 24px; margin: 0; }
+.menu a { color: #fff; margin: 0 10px; text-decoration: none; }
+.menu a:hover { text-decoration: underline; }
+
+main { max-width: 1100px; margin: 20px auto; padding: 0 20px 40px; }
+h2 { margin-bottom: 15px; color: #2f5a3d; }
+
+.price-table { width: 100%; border-collapse: collapse; background: #fff; }
+.price-table th, .price-table td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+.price-table th { background: #4a7c59; color: #fff; }
+.price-table tr.хит { background: #d4edda; }
+.price-table tr.акция { background: #fff3cd; }
+.price-table tr.новинка { background: #d1ecf1; }
+</style>
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="/static/images/logo.png" alt="Логотип">
+        <h1>ЗооМир</h1>
+    </div>
+    <nav class="menu">
+        <a href="/">Главная</a>
+        <a href="/about.html">О компании</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/price.html">Прайс-лист</a>
+    </nav>
+</header>
+
+<main>
+<h2>Прайс-лист</h2>
+<table class="price-table">
+    <thead>
+        <tr><th>Категория</th><th>Товар</th><th>Цена</th><th>Статус</th></tr>
+    </thead>
+    <tbody>
+        
+        <tr class="хит">
+            <td>Корма для кошек</td>
+            <td>Royal Canin, 2 кг</td>
+            <td>1290 ₽</td>
+            <td>хит</td>
+        </tr>
+        
+        <tr class="акция">
+            <td>Корма для собак</td>
+            <td>Pedigree, 3 кг</td>
+            <td>990 ₽</td>
+            <td>акция</td>
+        </tr>
+        
+        <tr class="">
+            <td>Игрушки</td>
+            <td>Мячик с колокольчиком</td>
+            <td>350 ₽</td>
+            <td>—</td>
+        </tr>
+        
+        <tr class="">
+            <td>Другое</td>
+            <td>Поводок-рулетка 5 м</td>
+            <td>890 ₽</td>
+            <td>—</td>
+        </tr>
+        
+        <tr class="новинка">
+            <td>Аквариумистика</td>
+            <td>Аквариум 30 л</td>
+            <td>3990 ₽</td>
+            <td>новинка</td>
+        </tr>
+        
+        <tr class="">
+            <td>Птицы</td>
+            <td>Клетка для попугая</td>
+            <td>2200 ₽</td>
+            <td>—</td>
+        </tr>
+        
+    </tbody>
+</table>
+</main>
+</body>
+</html>
