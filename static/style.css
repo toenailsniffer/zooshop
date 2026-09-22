@@ -1,0 +1,44 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; color: #222; background: #f5f7f5; }
+
+.header, .footer {
+    background: #4a7c59; color: #fff; padding: 15px 30px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { border-radius: 50%; }
+.menu a, .footer a { color: #fff; margin: 0 10px; text-decoration: none; }
+.menu a:hover { text-decoration: underline; }
+
+main { max-width: 1100px; margin: 20px auto; padding: 0 20px; }
+h2 { margin-bottom: 15px; color: #2f5a3d; }
+
+.intro { display: flex; gap: 30px; align-items: center; margin-bottom: 40px; }
+.intro img { border-radius: 10px; }
+.btn {
+    display: inline-block; background: #4a7c59; color: #fff;
+    padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-top: 15px;
+}
+
+.services, .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card {
+    background: #fff; border-radius: 10px; padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.card img { width: 100%; border-radius: 8px; }
+.card h3 { margin: 10px 0 5px; }
+.price { color: #c0392b; font-weight: bold; margin-top: 8px; }
+.features { font-size: 13px; color: #555; }
+
+.map { margin: 40px 0; }
+.map iframe { border-radius: 10px; }
+
+.price-table { width: 100%; border-collapse: collapse; background: #fff; }
+.price-table th, .price-table td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+.price-table th { background: #4a7c59; color: #fff; }
+.price-table tr.хит { background: #d4edda; }
+.price-table tr.акция { background: #fff3cd; }
+.price-table tr.новинка { background: #d1ecf1; }
+
+.footer { margin-top: 40px; font-size: 14px; }
